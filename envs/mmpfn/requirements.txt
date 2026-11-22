@@ -1,0 +1,15 @@
+# Python 3.10.16; the MultiModalPFN clone is added to PYTHONPATH by the runner
+torch==2.4.1
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+schedulefree==1.4.1
+einops==0.8.1
+networkx==3.4.2
+matplotlib==3.10.1
+seaborn==0.13.2
+pyyaml==6.0.2
+tqdm==4.67.1
+typing_extensions==4.12.2
+packaging==24.2

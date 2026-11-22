@@ -1,0 +1,17 @@
+[project]
+name = "rofe-env-tabpfn"
+version = "0.1.0"
+description = "Environment for TabPFN 2.5 and 3.5 predictions"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "tabpfn==9.2.0",
+  "torch==2.7.1",
+  "numpy==2.5.4",
+  "scikit-learn==1.9.1",
+  "scipy==1.18.1",
+  "pandas==3.0.6",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]

@@ -1,0 +1,7 @@
+experiment: zhang_heads
+tasks: image
+encoders: [dinov3, siglip]
+methods: [knn, logreg, linear_svm, mlp, random_forest, xgboost]
+levels: [10, 25, 50, 100]
+settings: [embedding, joint]
+draws: 3

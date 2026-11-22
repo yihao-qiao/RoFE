@@ -1,0 +1,293 @@
+{
+  "rule": "candidate of the authors' 39-candidate head grid with the best mean query accuracy over the five folds on the whole labeled pool, ties to the lowest index; DINOv3 CLS embeddings; reference_gpu: GPU type of each fold's selected grid run",
+  "tasks": {
+    "BIN_IMAGE_CELEB_ATTRACTIVENESS": {
+      "candidate": 19,
+      "mgm_heads": 64,
+      "cap_heads": 4,
+      "reference_gpu": [
+        "A100",
+        "A100",
+        "A100",
+        "A100",
+        "A100"
+      ]
+    },
+    "BIN_IMAGE_HATEFUL_MEME": {
+      "candidate": 3,
+      "mgm_heads": 8,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "L40S",
+        "A100",
+        "L40S",
+        "A100",
+        "L40S"
+      ]
+    },
+    "BIN_IMAGE_MAMMOGRAPHY_CMMD": {
+      "candidate": 36,
+      "mgm_heads": 256,
+      "cap_heads": 16,
+      "reference_gpu": [
+        "L40S",
+        "A100",
+        "L40S",
+        "A100",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_CHEXPERT": {
+      "candidate": 35,
+      "mgm_heads": 256,
+      "cap_heads": 12,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_CBIS_DDSM": {
+      "candidate": 37,
+      "mgm_heads": 256,
+      "cap_heads": 24,
+      "reference_gpu": [
+        "A100",
+        "A100",
+        "A100",
+        "A100",
+        "A100"
+      ]
+    },
+    "MUL_IMAGE_GLAUCOMA_SMDG": {
+      "candidate": 25,
+      "mgm_heads": 128,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "A100",
+        "A100",
+        "A100",
+        "A100",
+        "A100"
+      ]
+    },
+    "MUL_IMAGE_CSGO_SKIN_PRICE": {
+      "candidate": 32,
+      "mgm_heads": 256,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "A100",
+        "A100",
+        "L40S",
+        "A100",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_FLOWER_BOUQUETS": {
+      "candidate": 38,
+      "mgm_heads": 256,
+      "cap_heads": 32,
+      "reference_gpu": [
+        "L40S",
+        "A100",
+        "L40S",
+        "L40S",
+        "A100"
+      ]
+    },
+    "MUL_IMAGE_HUBMAP_HPA": {
+      "candidate": 34,
+      "mgm_heads": 256,
+      "cap_heads": 8,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_JUSTIN_INSTAGRAM": {
+      "candidate": 32,
+      "mgm_heads": 256,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "A100",
+        "L40S",
+        "A100",
+        "L40S",
+        "A100"
+      ]
+    },
+    "MUL_IMAGE_PETFINDER": {
+      "candidate": 33,
+      "mgm_heads": 256,
+      "cap_heads": 4,
+      "reference_gpu": [
+        "A100",
+        "A100",
+        "A100",
+        "A100",
+        "A100"
+      ]
+    },
+    "MUL_IMAGE_ZOOSCAN_ZOOPLANKTON": {
+      "candidate": 34,
+      "mgm_heads": 256,
+      "cap_heads": 8,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_MINECRAFT": {
+      "candidate": 34,
+      "mgm_heads": 256,
+      "cap_heads": 8,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "BIN_IMAGE_OASIS_ALZHEIMERS": {
+      "candidate": 30,
+      "mgm_heads": 128,
+      "cap_heads": 24,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_REDDIT_MEMES": {
+      "candidate": 25,
+      "mgm_heads": 128,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_POKEMON_HEIGHT": {
+      "candidate": 3,
+      "mgm_heads": 8,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "L40S",
+        "A100",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_HAM10000_LESION": {
+      "candidate": 36,
+      "mgm_heads": 256,
+      "cap_heads": 16,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "BIN_IMAGE_PINTEREST_POPULAR": {
+      "candidate": 10,
+      "mgm_heads": 16,
+      "cap_heads": 16,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_HEARTHSTONE_CLASS": {
+      "candidate": 36,
+      "mgm_heads": 256,
+      "cap_heads": 16,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "MUL_IMAGE_PAD_UFES_LESION": {
+      "candidate": 20,
+      "mgm_heads": 64,
+      "cap_heads": 8,
+      "reference_gpu": [
+        "L40S",
+        "A100",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "petfinder": {
+      "candidate": 23,
+      "mgm_heads": 64,
+      "cap_heads": 24,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "pad_ufes_20": {
+      "candidate": 25,
+      "mgm_heads": 128,
+      "cap_heads": 2,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "cbis_mass": {
+      "candidate": 29,
+      "mgm_heads": 128,
+      "cap_heads": 16,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    },
+    "cbis_calc": {
+      "candidate": 10,
+      "mgm_heads": 16,
+      "cap_heads": 16,
+      "reference_gpu": [
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S",
+        "L40S"
+      ]
+    }
+  }
+}

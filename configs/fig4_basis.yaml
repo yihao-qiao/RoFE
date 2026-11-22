@@ -1,0 +1,8 @@
+experiment: basis
+tasks: image
+encoders: [dinov3, siglip]
+pfn: tabicl
+methods: [comet, comet_x4, rot1, rofe, rot_strong, rot_weak, hadamard, givens]
+levels: [10, 25, 50, 100]
+settings: [embedding]
+draws: 3

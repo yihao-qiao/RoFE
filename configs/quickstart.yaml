@@ -1,0 +1,8 @@
+experiment: interface
+tasks: [petfinder]
+encoders: [dinov3]
+pfn: tabicl
+methods: [comet, rofe]
+levels: [10]
+settings: [embedding]
+draws: 1

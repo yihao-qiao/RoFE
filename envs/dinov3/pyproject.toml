@@ -1,0 +1,15 @@
+[project]
+name = "rofe-env-dinov3"
+version = "0.1.0"
+description = "Environment for the DINOv3 image embeddings"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "torch==2.7.1",
+  "torchvision==0.22.1",
+  "numpy==2.2.6",
+  "pillow==11.3.0",
+]
+
+[tool.uv]
+package = false
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]

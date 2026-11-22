@@ -1,0 +1,7 @@
+experiment: zhang_sweep
+tasks: image
+encoders: [dinov3, siglip]
+pfn: tabpfn_v3.5
+levels: [10, 25, 50, 100]
+settings: [embedding, joint]
+draws: 3

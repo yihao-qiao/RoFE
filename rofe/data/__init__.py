@@ -1,0 +1,3 @@
+from .sources import DINOV3_REVISION, MMPFN_REVISION, MULTABENCH_REVISION, verify_clone
+
+__all__ = ["DINOV3_REVISION", "MMPFN_REVISION", "MULTABENCH_REVISION", "verify_clone"]
