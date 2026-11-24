@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "RoFE: Rotated Frozen Embeddings for Low-Data Multimodal Tabular Learning"
+type: software
+authors:
+  - given-names: "Yihao"
+    family-names: "Qiao"
+  - given-names: "Jiajian"
+    family-names: "Ma"
+  - given-names: "Wushuang"
+    family-names: "Rui"
+  - given-names: "Abhishek"
+    family-names: "Jha"
+  - given-names: "Aarti"
+    family-names: "Darji"
+  - given-names: "Yiqiu"
+    family-names: "Shen"
+license: MIT
+repository-code: "https://github.com/yihao-qiao/RoFE"
+url: "https://yihao-qiao.github.io/RoFE/"
+preferred-citation:
+  type: article
+  title: "RoFE: Rotated Frozen Embeddings for Low-Data Multimodal Tabular Learning"
+  authors:
+    - given-names: "Yihao"
+      family-names: "Qiao"
+    - given-names: "Jiajian"
+      family-names: "Ma"
+    - given-names: "Wushuang"
+      family-names: "Rui"
+    - given-names: "Abhishek"
+      family-names: "Jha"
+    - given-names: "Aarti"
+      family-names: "Darji"
+    - given-names: "Yiqiu"
+      family-names: "Shen"
+  journal: "arXiv preprint arXiv:2611.31049"
+  year: 2026
+  url: "https://arxiv.org/abs/2611.31049"
