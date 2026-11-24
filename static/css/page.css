@@ -1,0 +1,419 @@
+
+/* One text face everywhere (fonts.css), Latin Modern Mono for code, New Computer Modern for math (MathJax). */
+body, button, input, select, textarea,
+.publication-title, .publication-authors, .teaser {
+  font-family: var(--font-text);
+}
+
+code, pre, kbd, samp {
+  font-family: var(--font-mono);
+}
+
+.publication-title {
+  text-wrap: balance;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Author names without a link are shown in the link colour of index.css too, but nothing happens on hover or click */
+.publication-authors .author-name {
+  color: hsl(204, 86%, 53%);
+}
+
+/* Sections alternate between white and a light grey band */
+.section.is-band {
+  background-color: #f5f5f5;
+}
+
+/* Bulma's code blocks are #f5f5f5 as well; on a band the BibTeX block stays white */
+.section.is-band pre {
+  background-color: #fff;
+}
+
+/* On phones the title gets a smaller size and may break anywhere */
+@media screen and (max-width: 600px) {
+  .title.is-1.publication-title {
+    font-size: 2.2rem;
+  }
+
+  .publication-title .nowrap {
+    white-space: normal;
+  }
+}
+
+.teaser-figure {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* Interactive Fig. 2 (static/js/geometry_demo.js): two panels, one slider; hidden until the script runs */
+#geometry-demo[hidden], #geometry-static[hidden] {
+  display: none !important;
+}
+
+.geometry-demo .gd-panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.geometry-demo .gd-panel {
+  flex: 1 1 300px;
+  max-width: 420px;
+  text-align: center;
+}
+
+.content .geometry-demo p.gd-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.gd-rotate {
+  color: #6A4C93;
+}
+
+.geometry-demo .gd-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.geometry-demo .gd-svg.is-dragging {
+  cursor: grabbing;
+}
+
+.gd-axis-label {
+  font-size: 11px;
+}
+
+.gd-point-label {
+  font-size: 13px;
+  font-style: italic;
+}
+
+.gd-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.6rem;
+  height: auto;
+  margin-top: 0.2rem;
+}
+
+.gd-bar {
+  width: 2.6rem;
+  height: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.72rem;
+  color: #7a7a7a;
+}
+
+.gd-bar-fill {
+  width: 1.1rem;
+  background: #9a9a9a;
+  border-radius: 2px 2px 0 0;
+  margin-bottom: 0.15rem;
+}
+
+.gd-bars-rotated .gd-bar span {
+  color: #6A4C93;
+}
+
+.content .gd-bars p.gd-bars-title {
+  flex-basis: 100%;
+  margin: 0.1rem 0 0 0;
+  font-size: 0.72rem;
+  color: #7a7a7a;
+}
+
+.content .geometry-demo p.gd-readout {
+  min-height: 2.8em;
+  margin: 0.35rem 0 0 0;
+  font-size: 0.85rem;
+  color: #4a4a4a;
+}
+
+.gd-changed {
+  color: #C33741;
+}
+
+.gd-controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 0.9rem auto 0.6rem auto;
+  max-width: 600px;
+}
+
+.gd-track {
+  flex: 1 1 auto;
+}
+
+.geometry-demo .gd-slider {
+  width: 100%;
+  accent-color: #8C3A4B;
+}
+
+.gd-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: #7a7a7a;
+}
+
+/* Interactive Fig. 3 (static/js/gram_demo.js): two heat maps and the column variances, one slider */
+#gram-demo[hidden] {
+  display: none !important;
+}
+
+.gram-demo .gm-panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gram-demo .gm-panel {
+  flex: 0 1 220px;
+  text-align: center;
+}
+
+.gram-demo .gm-panel-bars {
+  flex: 1 1 300px;
+  max-width: 340px;
+}
+
+.content .gram-demo p.gm-title {
+  margin: 0 0 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.gram-demo .gm-heat {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #dbdbdb;
+}
+
+.gram-demo .gm-bars {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.gm-tick {
+  font-size: 10px;
+}
+
+.content .gram-demo p.gm-readout {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.82rem;
+  color: #4a4a4a;
+  min-height: 2.6em;
+}
+
+.gram-demo .gm-scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: #7a7a7a;
+  margin-top: 0.4rem;
+}
+
+.gram-demo .gm-scale-bar {
+  display: inline-block;
+  width: 120px;
+  height: 0.6rem;
+  border: 1px solid #dbdbdb;
+  /* the colour map of gram_demo.js: white, 18% of the theme colour at 0.35, the theme colour */
+  background: linear-gradient(to right, #fff 0%, #ebdee1 35%, #8C3A4B 100%);
+}
+
+.gram-demo .gm-scale-label {
+  margin-left: 0.4rem;
+}
+
+.gram-demo .gd-controls .gm-slider {
+  width: 100%;
+  accent-color: #8C3A4B;
+}
+
+/* Result tables with one block shown at a time (static/js/result_tables.js) */
+.result-table tr[hidden],
+.result-table caption[hidden] {
+  display: none;
+}
+
+/* the buttons sit right above the table, so the table needs no top margin of its own */
+.result-table.is-one-block {
+  margin-top: 0.4rem;
+}
+
+.rt-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 1.4rem;
+  margin: 1.2rem 0 0.5rem 0;
+}
+
+.content .rt-controls p.rt-title {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rt-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rt-group-label {
+  font-size: 0.8rem;
+  color: #7a7a7a;
+}
+
+.rt-group .buttons {
+  margin-bottom: 0 !important;
+}
+
+.rt-group .buttons .button {
+  margin-bottom: 0 !important;
+}
+
+/* Button icons are inline SVG (no icon font); one em high, in the button's text colour, as Font Awesome draws them */
+.publication-links .button-icon {
+  height: 1em;
+  width: auto;
+  fill: currentColor;
+}
+
+/* Figures converted from the paper's PDFs */
+.paper-figure {
+  margin: 1.5rem 0 1.75rem 0 !important;
+}
+
+.paper-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.paper-figure.is-medium img {
+  max-width: 780px;
+}
+
+.figure-caption {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+/* Bulma sets captions in .content figures to italic; keep them upright like the main caption */
+.content figure figcaption.figure-caption {
+  font-style: normal;
+}
+
+/* Result tables */
+.result-table {
+  margin: 1.25rem auto 0.5rem auto;
+}
+
+/* Bulma's .content makes tables full width; the result tables keep their natural width, centred */
+.content table.result-table {
+  width: auto;
+}
+
+.content table.result-table td,
+.content table.result-table th {
+  padding: 0.3em 0.85em;
+}
+
+.result-table th,
+.result-table td {
+  text-align: right !important;
+  white-space: nowrap;
+}
+
+.result-table th:first-child,
+.result-table td:first-child {
+  text-align: left !important;
+}
+
+.result-table caption {
+  caption-side: top;
+  font-weight: 700;
+  color: #363636;
+  padding-bottom: 0.4rem;
+}
+
+/* the level row of a two-row header starts with a level, not with the row label */
+.result-table thead tr + tr th:first-child {
+  text-align: right !important;
+}
+
+.result-table th.span-head {
+  text-align: center !important;
+  font-weight: 400;
+}
+
+.result-table th.lead {
+  vertical-align: bottom;
+}
+
+/* the paper's own rows: name in bold and the table tint of the paper (E8E8FF) */
+.result-table tr.ours td {
+  background: #e8e8ff;
+}
+
+.result-table tr.ours td:first-child {
+  font-weight: 700;
+}
+
+.result-table tr.delta td {
+  color: #4a4a4a;
+}
+
+.result-table tr.group td {
+  font-style: italic;
+  color: #7a7a7a;
+  background: #f5f5f5;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table-note {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+pre code {
+  white-space: pre;
+}
